@@ -6,6 +6,7 @@ the requirements.txt file for all the libraries used.
 
 Overview on how to run this module
 ================================
+1. Clone this git repository onto your computer. The directory will be named 'codechallenge'
 1. Install a Python virtualenv
 2. Install packages required
 3. Run dosing.py
