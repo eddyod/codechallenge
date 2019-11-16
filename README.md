@@ -1,4 +1,4 @@
-Configuration of Project Environment
+Configuration of Project Environment for Code Challenge, author: Edward O'Donnnell
 *************************************
 
 This is a python module for the code challenge. It uses pandas, pytest, and plotly. Look at 
