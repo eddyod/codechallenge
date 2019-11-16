@@ -46,5 +46,10 @@ B. Run the main file
 		3. SVDOSE: a string, Y or N
 		4. outputdir: a string for the data output dir. This directory must already exist and be
      		in the same dir as this directory.
+  
+C. Run the tests
+---------------
+	pytest test_dosing.py
+  
 		
 	
