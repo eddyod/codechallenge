@@ -18,6 +18,4 @@ file2 = './data/t2_registry_20190619.csv'
 
 df_ec = pd.read_csv(file1)
 df_registry = pd.read_csv(file2)
-print(df_ec.head())
-print("\n\n")
-print(df_registry.head())
+df_merged = pd.merge(df_registry, df_ec,  how='left', left_on=['RID','VISCODE'], right_on=['RID','VISCODE'])
