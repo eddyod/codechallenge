@@ -1,15 +1,15 @@
 Configuration of Project Environment
 *************************************
 
-This is a python module that matches text from a database table. It is useful when you allowed your users to enter text that gets
-redundant. It uses python3, Fuzzywuzzy, mysql, pydboc and other libraries.
+This is a python module for the code challenge. It uses pandas, pytest, and plotly. Look at 
+the requirements.txt file for all the libraries used.
 
 Overview on how to run this module
 ================================
 1. Install a Python virtualenv
 2. Install packages required
-3. Have access to the mysql or MS sql server
-4. Have access to a linux server that can access the databases
+3. Run dosing.py
+4. Run test_dosing.py
 
 Setup procedure
 ================
@@ -17,49 +17,33 @@ Setup procedure
 A. Configure
 ------------------------------------------------------------------------------------------------
 
-1. Create a Python Virtual Environment
+1. Create a Python Virtual Environment (I'm assuming you're using a unix based OS)
     - Make the dir if it doesn't exist:
 
         mkdir ~/.virtualenvs
         
 
-    - Create virtualenv (note, I use the word matching below, it can be anything)
+    - Create virtualenv (note, I use the word codechallenge below, it can be anything)
 
-        python3 -m venv ~/.virtualenv/matching
+        python3 -m venv ~/.virtualenv/codechallenge
         
     - Activate virtualenv 
 
-        source ~/.virtualenv/matching/bin/activate
+        source ~/.virtualenv/codechallenge/bin/activate
 
     - Install requirements::
 
         pip install -r requirements.txt
 
 
-B. Edit connections.py 
+B. Run the main file 
 ---------------
-
-    Edit/create the connections.py file. (you might have to create it as it has passwords and is not stored in git)
-    - It should look something like:
-    
-        import MySQLdb
-        MYCONNECTION = MySQLdb.connect("localhost", "user", "pass", "db_table")
-
-    
-    In an editor, set the username, password, database etc. 
-    You can add muliple connections but you'll have to import the correct one into the matchingStuff.py file. 
-
-C. Edit matchingStuff.py 
----------------------------------------------------------------------------
-	Edit this file and make sure you have a method for getting your sql query. Look at the getSponsorData method 
-	for place to copy and paste. 
-
-D. Edit runme.py 
----------------------------------------------------------------------------
-	Edit this file and make sure you have the methods you want to run. 
-	You'll need a fetch method at the least. Look at the existing code
-	for an example. Then, from the command line:
-	
-	python runme.py
-
+	python dosing.py
+	It will ask for several input variables:
+		1. ECSDSTXT: a number
+     	2. VISCODE: a string code 
+     	3. SVDOSE: a string, Y or N
+     	4. outputdir: a string for the data output dir. This directory must already exist and be
+     		in the same dir as this directory.
+		
 	
