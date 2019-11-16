@@ -41,9 +41,9 @@ B. Run the main file
 	python dosing.py
 	It will ask for several input variables:
 		1. ECSDSTXT: a number
-     	2. VISCODE: a string code 
-     	3. SVDOSE: a string, Y or N
-     	4. outputdir: a string for the data output dir. This directory must already exist and be
+		2. VISCODE: a string code 
+		3. SVDOSE: a string, Y or N
+		4. outputdir: a string for the data output dir. This directory must already exist and be
      		in the same dir as this directory.
 		
 	
