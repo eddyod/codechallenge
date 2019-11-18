@@ -21,7 +21,7 @@ A. Configure
 1. Create a Python Virtual Environment (I'm assuming you're using a unix based OS)
     - Make the dir if it doesn't exist:
 
-        mkdir ~/.virtualenvs
+        mkdir ~/.virtualenv
         
 
     - Create virtualenv (note, I use the word codechallenge below, it can be anything)
